@@ -1,0 +1,28 @@
+# set for build system
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# basic info for project
+[project]
+# showing on pip list
+name = "ft_package"
+version = "0.0.1"
+authors = [
+  { name="jischoi", email="jischoi@42.fr" },
+]
+# showing on pip show
+description = "A sample test package"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+# classifying tag for searching
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# for pip show -v
+[project.urls]
+"Homepage" = "https://github.com/coisu/Python-for-Data-Science/tree/main/0%20-%20Starting/ex09/ft_package"

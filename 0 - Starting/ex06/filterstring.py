@@ -1,6 +1,7 @@
 import sys
 from ft_filter import ft_filter
 
+
 def filter_string(s: str, n: int) -> list:
     '''
     '''
@@ -8,6 +9,7 @@ def filter_string(s: str, n: int) -> list:
     find_longer = lambda word: len(word) > n
     longer = ft_filter(find_longer, words)
     return longer
+
 
 def main():
     '''
@@ -22,7 +24,7 @@ def main():
         n = int(sys.argv[2])
         print(filter_string(s, n))
     except (IndexError, ValueError):
-        print(f"AssertionError: the arguments are bad")
+        print("AssertionError: the arguments are bad")
     except Exception as e:
         print(f"Unexpected error occured: {e}")
 
